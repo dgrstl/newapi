@@ -12,9 +12,20 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'http://localhost:8080/api/nodes.raw?srn=gh/stoplightio/platform-demo/reference/common/models/error.yaml'
+            application/xml:
+              schema:
+                $ref: 'http://localhost:8080/api/nodes.raw?srn=gh/stoplightio/platform-demo/reference/todos/models/user.json&mid=2'
       requestBody:
         content:
           application/json:
+            schema:
+              type: object
+              properties: {}
+          application/xml:
             schema:
               type: object
               properties: {}
