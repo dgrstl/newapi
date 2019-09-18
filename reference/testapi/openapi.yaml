@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: testapi
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /foo:
+    get:
+      summary: get foo
+      tags: []
+      responses:
+        '200':
+          description: OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+components:
+  schemas: {}
